@@ -8,6 +8,7 @@ def handle_args():
 
     parser.add_argument("file", help="The Path To The LeL File", type=str)
     parser.add_argument("-o", "--output", help="The Path Of The Output File", default=None, type=str)
+    parser.add_argument("-v", "--verbose", help="Logs much more information than normal.", action="store_true")
 
     return parser.parse_args()
 
@@ -32,9 +33,13 @@ def edit_settings(args) -> None:
         g.output_path = args.file[:-4] + ".bean"
 
     
+    g.verbose = args.verbose
+
+    
     g.log.info("[Argument Handler] -------- Specified Arguments --------")
     g.log.info(f"[Argument Handler] -  Input File: {g.file_path}")
     g.log.info(f"[Argument Handler] -  Output File: {g.output_path}")
+    g.log.info(f"[Argument Handler] -  Verbose: {g.verbose}")
     g.log.info("[Argument Handler] -------------------------------------")
 
 
