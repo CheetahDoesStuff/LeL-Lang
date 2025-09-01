@@ -8,3 +8,6 @@ dependencies = [
     "platformdirs>=4.4.0",
     "usefullog>=0.8.7",
 ]
+
+[project.scripts]
+lel = "lellang.cli:main"
