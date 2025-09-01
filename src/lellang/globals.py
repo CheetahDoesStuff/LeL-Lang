@@ -9,3 +9,4 @@ log = logger.Logger(
 )
 
 file_path: str = ""
+output_path: str = ""
