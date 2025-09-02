@@ -3,3 +3,5 @@
 
 ## What Is This?
 LeLlang is a custom low level compiled programming language, but unlike other compiled languages, this one is compiled into BEANS
+
+Docs coming soon... (have to, yk make the compiler first)
