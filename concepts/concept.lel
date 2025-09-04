@@ -1,15 +1,20 @@
 var my_variable = 12;
-rmvar my_variable;
+rmv my_variable;
 
 upd my_variable = 13;
 
-upd my_variable = calc (my_variable + my_variable);
+upd my_variable = (my_variable + my_variable);
 
 
-func my_func {
+def my_func {
     var new_var = 2;
-    upd my_variable = calc(my_variable - new_var);
+    upd my_variable = (my_variable - new_var);
 };
 
 
-if (iz my_variable) run my_func;
+ifs [iz my_variable] run my_func;
+
+// comment
+// {} = function code block
+// () = calculation
+// [] = comparison / if
