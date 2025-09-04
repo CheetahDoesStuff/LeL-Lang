@@ -1,0 +1,15 @@
+var my_variable = 12;
+rmvar my_variable;
+
+upd my_variable = 13;
+
+upd my_variable = calc (my_variable + my_variable);
+
+
+func my_func {
+    var new_var = 2;
+    upd my_variable = calc(my_variable - new_var);
+};
+
+
+if (iz my_variable) run my_func;
