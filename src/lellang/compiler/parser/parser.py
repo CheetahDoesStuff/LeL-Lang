@@ -6,5 +6,5 @@ class Parser():
         self.raw = get_raw()
 
 
-    def parse(self) -> list:
+    def parse(self) -> dict:
         
