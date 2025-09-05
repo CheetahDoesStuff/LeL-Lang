@@ -6,6 +6,9 @@ TOKENS = SimpleNamespace(
     var_name = "VAR_NAME",
 
     equal = "EQUAL",
-    
+
+    val = "VALUE",
+
+    eol = "END_OF_LINE",
 
 )
