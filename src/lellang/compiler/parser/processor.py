@@ -1,3 +1,5 @@
+import re
+
 class Processor:
 
     def __init__(self, raw: str) -> None:
@@ -6,6 +8,9 @@ class Processor:
     def process(self) -> list:
 
         processed = self.raw
+
+        processed = re.sub(r'//.*', '', processed)
+
         processed = processed.replace("\n", "")
         processed = "".join(processed.split())
 
