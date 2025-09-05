@@ -1,4 +1,5 @@
 from lellang.compiler.parser.get_raw import get_raw
+from lellang.compiler.parser.processor import Processor
 
 class Parser():
     
@@ -6,5 +7,7 @@ class Parser():
         self.raw = get_raw()
 
 
-    def parse(self) -> dict:
+    def parse(self) -> list:
         
+        processor = Processor(self.raw)
+        return processor.process()
