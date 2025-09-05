@@ -10,4 +10,6 @@ class Parser():
     def parse(self) -> list:
         
         processor = Processor(self.raw)
-        return processor.process()
+        proccessed = processor.process()
+
+        # return processed
