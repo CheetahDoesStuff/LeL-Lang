@@ -11,4 +11,4 @@ class Compiler:
         
         parser = Parser()
         ast = parser.parse()
-        log.raw(ast)
+        log.raw(str(ast))

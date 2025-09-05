@@ -1,18 +1,15 @@
 import re
 
 class Processor:
-
     def __init__(self, raw: str) -> None:
         self.raw = raw
 
     def process(self) -> list:
-
         processed = self.raw
-
         processed = re.sub(r'//.*', '', processed)
 
-        processed = processed.replace("\n", "")
-        processed = "".join(processed.split())
+        parts = processed.split(";")
+        parts = ["".join(p.split()) for p in parts]
+        parts = [p for p in parts if p]
 
-        processed = processed.split(";")
-        return processed
+        return parts
