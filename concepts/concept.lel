@@ -18,3 +18,12 @@ ifs [iz my_variable] run my_func;
 // {} = function code block
 // () = calculation
 // [] = comparison / if
+
+// Compiled Code:
+
+// // var my_variable = 12;
+// LDI r1 12
+// LOAD r1 m1
+
+// // rmv my_variable;
+// (compiles to nothing, tells the compiler it can overwrite that variable)
