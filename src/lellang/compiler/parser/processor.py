@@ -12,4 +12,9 @@ class Processor:
         parts = ["".join(p.split()) for p in parts]
         parts = [p for p in parts if p]
 
-        return parts
+        tokens = []
+        for p in parts:
+            split_tokens = re.split(r'([{}])', p)  # separate { and }
+            tokens.extend([t for t in split_tokens if t])
+
+        return tokens
