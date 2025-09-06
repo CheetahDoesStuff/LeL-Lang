@@ -12,7 +12,7 @@ def my_func {
 };
 
 
-ifs [iz my_variable] run my_func;
+ifs [isz my_variable] run my_func;
 
 // comment
 // {} = function code block
