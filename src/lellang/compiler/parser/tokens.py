@@ -10,6 +10,7 @@ TOKENS = SimpleNamespace(
     val = "VALUE",
 
     func_dec = "FUNCTION_DECLARATION",
+    func_exec = "FUNCTION_EXECUTION",
 
     equal = "EQUAL",
 
