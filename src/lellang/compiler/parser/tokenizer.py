@@ -7,6 +7,7 @@ class Tokenizer:
     
     def tokenize(self) -> dict:
 
-        for line in self.processed:
-            #log.info(line)
-            pass
+        tokens = {}
+        line_index = 0
+
+        return tokens
