@@ -41,6 +41,7 @@ def edit_settings(args) -> None:
     g.log.info(f"[Argument Handler] -  Output File: {g.output_path}")
     g.log.info(f"[Argument Handler] -  Verbose: {g.verbose}")
     g.log.info("[Argument Handler] -------------------------------------")
+    g.log.space()
 
 
 def main():

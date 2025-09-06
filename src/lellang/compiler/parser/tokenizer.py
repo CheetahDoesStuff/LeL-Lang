@@ -1,3 +1,5 @@
+from lellang.globals import log
+
 class Tokenizer:
 
     def __init__(self, processed) -> None:
@@ -5,4 +7,6 @@ class Tokenizer:
     
     def tokenize(self) -> dict:
 
-        
+        for line in self.processed:
+            #log.info(line)
+            pass
