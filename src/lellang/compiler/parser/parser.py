@@ -1,5 +1,6 @@
 from lellang.compiler.parser.get_raw import get_raw
 from lellang.compiler.parser.processor import Processor
+from lellang.compiler.parser.tokenizer import Tokenizer
 
 class Parser():
     
@@ -11,5 +12,8 @@ class Parser():
         
         processor = Processor(self.raw)
         processed = processor.process()
+
+        tokenizer = Tokenizer(processed)
+        tokens = tokenizer.tokenize()
 
         return processed
