@@ -14,7 +14,7 @@ class Processor:
 
         tokens = []
         for p in parts:
-            split_tokens = re.split(r'([{}])', p)
+            split_tokens = re.split(r'([{}\[\]\(\)])', p)
             tokens.extend([t for t in split_tokens if t])
 
         return tokens
