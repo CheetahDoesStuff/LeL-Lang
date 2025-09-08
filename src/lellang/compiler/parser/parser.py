@@ -16,4 +16,4 @@ class Parser():
         tokenizer = Tokenizer(processed)
         tokens = tokenizer.tokenize()
 
-        return processed
+        return tokens

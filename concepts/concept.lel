@@ -8,7 +8,7 @@ upd my_variable = (my_variable + my_variable);
 
 def my_func {
     var new_var = 2;
-    upd my_variable = (my_variable - new_var); // comment too
+    upd my_variable = (clc my_variable - new_var); // comment too
 };
 
 
