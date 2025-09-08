@@ -16,7 +16,8 @@ class Tokenizer:
             line = self.processed[line_index]
 
             cmd_token = line[:3]
-            tokens.append(cmd_token)
+            if cmd_token in vars(TOKENS).values():
+                tokens.append(cmd_token)
 
             line_index += 1
 

@@ -2,23 +2,21 @@ from types import SimpleNamespace
 
 TOKENS = SimpleNamespace(
 
-    var_dec = "VAR_DECLARATION",
+    var_dec = "var",
     var_name = "VAR_NAME",
 
-    var_rm = "VAR_REMOVE",
-    var_upd = "VAR_UPDATE",
+    var_rm = "rmv",
+    var_upd = "upd",
     val = "VALUE",
 
-    func_dec = "FUNCTION_DECLARATION",
-    func_exec = "FUNCTION_EXECUTION",
+    func_dec = "def",
+    func_exec = "run",
 
     equal = "EQUAL",
 
-    eol = "END_OF_LINE",
-
-    open_func = "OPEN_FUNCTION_BRACET",
-    close_func = "CLOSE_FUNCTION_BRACET",
-    open_calc = "OPEN_CALCULATION_PARANTHESIS",
-    close_calc = "CLOSE_CALCULATION_PARANTHESIS",
+    open_func = "{",
+    close_func = "}",
+    open_calc = "(",
+    close_calc = ")",
 
 )
