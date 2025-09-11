@@ -3,16 +3,16 @@ rmv my_variable;
 
 upd my_variable = 13;
 
-upd my_variable = (my_variable + my_variable);
+// upd my_variable = (clc my_variable + my_variable);
 
 
-def my_func {
-    var new_var = 2;
-    upd my_variable = (clc my_variable - new_var); // comment too
-};
+// def my_func {
+//     var new_var = 2;
+//     upd my_variable = (clc my_variable - new_var); // comment too
+// };
 
 
-ifs [isz my_variable] run my_func;
+// ifs [isz my_variable] run my_func;
 
 // comment
 // {} = function code block

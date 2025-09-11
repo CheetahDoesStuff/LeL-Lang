@@ -23,6 +23,12 @@ class Tokenizer:
             if cmd_token == TOKENS.var_dec:
                 line_struct = line[3:].split("=")
                 
+                line_token_struct[TOKENS.var_dec] = [
+                    {TOKENS.var_name: line_struct[0]}, 
+                    {TOKENS.equal: None}, 
+                    {TOKENS.val: line_struct[1]},
+                                                    ]
+                
 
             
             tokens.append(line_token_struct)
